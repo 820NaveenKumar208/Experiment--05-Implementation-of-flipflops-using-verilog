@@ -210,18 +210,18 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 ![292277452-27812f8e-26ba-4b08-a493-18df8e0f0ecc](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/7882bed8-cf74-41ad-b452-f62487eb929f)
 
+# Truth Table For T-FlipFlop:
 
-
+![292277472-9dfaefb6-c378-412b-90f3-ddca4da3aeba](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/2732ccbf-3e0b-4468-9fc7-8b9851138571)
 
 
 
 
 
 ### TIMING DIGRAMS FOR T-FLIP FLOP:
-![292277472-9dfaefb6-c378-412b-90f3-ddca4da3aeba](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/2f8dc825-476c-4986-b9c3-aa41a1b96c23)
 
 
-
+![292277490-ca6c5a0a-d2da-4ad7-9956-29580af0a355](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/927f73d2-04ff-4767-aa97-7014f99f6f75)
 
 
 
