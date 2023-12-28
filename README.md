@@ -13,7 +13,7 @@
 3.Find Rtl logic and timing diagram for all flipflops.
 
 4.end the program
-## SR Flip-Flop
+# SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
@@ -54,20 +54,20 @@ Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
                     end
                     endmodule
 
-# RTL LOGIC FOR SR-FLIPFLOP:
+## RTL LOGIC FOR SR-FLIPFLOP:
 
 ![292276317-f2cd191f-27d5-4572-8c50-3409ba4eaeab](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/8d3c960a-67e5-4157-9a45-611d05e13523)
 
-# Truth Table For SR-FLIP FLOP:
+## Truth Table For SR-FLIP FLOP:
 
 ![292276265-a5369caf-d15f-4cf1-99dc-9a28c3f699fa](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/fe8aaf8c-5725-43d1-8a8f-a4af643f8f0a)
 
-# Timing Diagram For SR-FLIP FLOP:
+## Timing Diagram For SR-FLIP FLOP:
 
 ![292276240-efd8c0f6-9cbb-4d01-9046-10d08a2da699](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/6a307d6b-a7ff-4837-8cca-9c9b5ab44365)
 
 
-## D Flip-Flop:
+# D Flip-Flop:
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
  
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
@@ -87,7 +87,7 @@ Qt+1t+1 = D
 
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
-# Program:
+## Program:
 
          module d(d,clk,q,qbar);
          input d,clk;
@@ -100,20 +100,20 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
          end
          endmodule
 
- # RTL Logic For D-Flipflop:
+ ## RTL Logic For D-Flipflop:
 
 ![292276688-d1f28eed-98da-49ce-a52a-ca1e128db7ae](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/465bbb5f-9a50-4ce8-ad89-1afc4a4ada89)
 
 
-# Truth Table For D-FlipFlop:
+## Truth Table For D-FlipFlop:
 ![292276704-d47c913d-b897-42ca-a104-ccdb45905357](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/084dd0be-52a7-4f34-b7e1-c27393e63d2f)
 
-# Timing Diagram For D-FlipFlop:
+## Timing Diagram For D-FlipFlop:
 
 ![292276722-b38dfab4-c998-4a73-893f-bea95b5dcf6b](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/121f8956-8bec-4418-88ae-522b17406b3f)
 
 
-### JK Flip-Flop
+# JK Flip-Flop
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 ![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
 
@@ -138,7 +138,7 @@ By using three variable K-Map, we can get the simplified expression for next sta
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is
 Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
-# Program:
+## Program:
                    module jk(J,K,clk,Q,Qbar);
                    input J,K,clk;
                    output reg Q;
@@ -152,20 +152,20 @@ Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
                    end
                    endmodule
 
-# RTL Logic For JK-FlipFlop:
+## RTL Logic For JK-FlipFlop:
 
 ![292277058-7b23c3f0-24fd-4f41-bd8f-687fc538d5f3](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/9fdec53f-2593-495b-9588-fe8467af7d55)
 
-# Truth Table For JK-Flipflop:
+## Truth Table For JK-Flipflop:
 
 ![292277015-1d87535b-8e5c-4d51-9400-b058bc666ed7](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/23cfaa6e-309e-4e1d-ae7c-58599170469b)
 
-# Timing Diagram For JK-FlipFlop:
+## Timing Diagram For JK-FlipFlop:
 
 ![292276805-121879af-c45c-431a-803f-3be9b232f3e7](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/77a93a93-7e54-41eb-8307-ff25ad1bfc21)
 
 
-### T Flip-Flop
+# T Flip-Flop
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
@@ -188,7 +188,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 
-### PROGRAM:
+## PROGRAM:
 
                module t(clk,T,q,qbar);
                input clk,T;
@@ -206,11 +206,11 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 
-### RTL LOGIC FOR T-FLIPFLOP :
+## RTL LOGIC FOR T-FLIPFLOP :
 
 ![292277452-27812f8e-26ba-4b08-a493-18df8e0f0ecc](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/7882bed8-cf74-41ad-b452-f62487eb929f)
 
-# Truth Table For T-FlipFlop:
+## Truth Table For T-FlipFlop:
 
 ![292277472-9dfaefb6-c378-412b-90f3-ddca4da3aeba](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/2732ccbf-3e0b-4468-9fc7-8b9851138571)
 
@@ -218,7 +218,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 
-### TIMING DIGRAMS FOR T-FLIP FLOP:
+## TIMING DIGRAMS FOR T-FLIP FLOP:
 
 
 ![292277490-ca6c5a0a-d2da-4ad7-9956-29580af0a355](https://github.com/820NaveenKumar208/Experiment--05-Implementation-of-flipflops-using-verilog/assets/154746066/927f73d2-04ff-4767-aa97-7014f99f6f75)
@@ -227,5 +227,5 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 
-### RESULTS :
+# RESULTS :
 Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully
